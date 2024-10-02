@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Business Training Recommendations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      body {
+        padding-top: 50px;
+      }
+      .container {
+        max-width: 900px;
+      }
+      table.data {
+        width: 100%;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+      }
+      table.data th, table.data td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      table.data th {
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Training Recommendations</h1>
+      <div class="table-responsive">
+        {{ tables[0]|safe }}
+      </div>
+      <h1 class="text-center">Business Performance Report</h1>
+      <div class="table-responsive">
+        {{ tables[1]|safe }}
+      </div>
+      <div class="text-center mt-4">
+        <a href="/" class="btn btn-primary">Upload Another File</a>
+      </div>
+    </div>
+  </body>
+</html>
